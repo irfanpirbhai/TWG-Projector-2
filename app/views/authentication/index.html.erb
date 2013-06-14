@@ -1,0 +1,5 @@
+index.html.erb
+
+<% @c.invoice.list["invoices"]["invoice"].each do |i| %>
+<%= i["date"] %><br>
+<% end %>
