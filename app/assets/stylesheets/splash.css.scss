@@ -1,0 +1,56 @@
+
+body {
+
+  background: #96b450;
+
+}
+
+.info-results-panel {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #7c9537;
+}
+
+
+
+.splash-container {
+  background: white;
+  margin: 50px auto;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #7c9537;
+
+}
+
+.info-submit-panel {
+
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 310px;
+
+
+  label {
+    display: inline-block;
+  }
+
+  input {
+    display: block;
+  }
+
+  .btn {
+    width: 330px 
+  }
+
+  input#oauth_secret {
+
+  width: 330px;
+}
+
+}
+
+.spreadsheet_export_icon {
+  height: 40px;
+  width: 40px;
+
+}

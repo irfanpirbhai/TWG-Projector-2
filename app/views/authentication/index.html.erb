@@ -1,5 +1,19 @@
-index.html.erb
+<div class="splash-container">
+  <div class="info-submit-panel">
+     <header>        
+    <ul>
+        <li id="logo"><%=image_tag "twg.png" %></li>
+        <li><h1>Freshbooks Revenue Projector</h1></li>
+      </ul>
+    </header>
+    <%= form_tag(home_path, :method=>'post') do %>
+      <%= label_tag "Your URL", nil, :rel => "tooltip", :title => "The part of your login url, excluding 'http://'", :data => {:placement => "right" } %>
+      <%= text_field_tag 'fb_url', "stephanleroux.freshbooks.com", :placeholder => "e.g. youraccount.freshbooks.com"  %>
+      
+      <%= label_tag "Freshbooks API Token", nil, :rel => "tooltip", :title => "Under 'My Account' (on the top right when you're logged into Freshbooks) -> 'Freshbooks API' -> 'OAuth Developer Access' -> 'OAuth Secret'. You'll need to request this from Freshbooks initially.", :data => {:placement => "right" } %>
+      <%= text_field_tag 'api_token', "c1db9b46f2e57f26d19b5fbbf579e3fe", :placeholder => "e.g. c1db9b46f2e57f26d19b5fbbf579e3fe" %><br>
+      <%= submit_tag 'Submit', :class => "btn" %>
+    <% end %>
+  </div>
 
-<% @c.invoice.list["invoices"]["invoice"].each do |i| %>
-<%= i["date"] %><br>
-<% end %>
+</div>
