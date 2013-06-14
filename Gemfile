@@ -6,7 +6,9 @@ gem 'jquery-rails'
 gem 'ruby-freshbooks'
 
 group :tools do
-  gem 'guard-test' # automatically runs our tests whenever there have been changes made to them
+  gem 'rb-fsevent', :require => false 
+  gem 'guard-test'
+  gem 'guard-livereload'
 end
 
 group :development do

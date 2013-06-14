@@ -19,16 +19,6 @@ class HomeController < ApplicationController
     @paid_total = 0
     @outstanding_total = 0
     @historical_outstanding = 0
-
-
-
-
+  end
 
 end
-
-
-
-<% @c.invoice.list["invoices"]["invoice"].each do |i| %>
-<%= i["date"] %><br>
-<% end %>
-
